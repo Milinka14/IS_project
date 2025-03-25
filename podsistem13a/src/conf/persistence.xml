@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence                                  http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <!-- Persistence Unit for podsistem2 Database -->
+  <persistence-unit name="podsistem12aPU" transaction-type="RESOURCE_LOCAL">
+    <class>entitetipodsistem2.Pripada</class>
+    <class>entitetipodsistem2.AudioSnimak</class>
+    <class>entitetipodsistem2.Kategorija</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3308/podsistem2?useSSL=false"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value="123"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+    </properties>
+  </persistence-unit>
+  <!-- Persistence Unit for podsistem1 Database -->
+  <persistence-unit name="podsistem11aPU" transaction-type="RESOURCE_LOCAL">
+    <class>entitetipodsistem1.Grad</class>
+    <class>entitetipodsistem1.Klijent</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3308/podsistem1?useSSL=false"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value="123"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+    </properties>
+  </persistence-unit>
+  <!-- Persistence Unit for podsistem1 Database -->
+  <persistence-unit name="podsistem13aPU" transaction-type="RESOURCE_LOCAL">
+    <class>entiteti.Ocena</class>
+    <class>entiteti.Paket</class>
+    <class>entiteti.SlusanjeVidea</class>
+    <class>entiteti.Pretplata</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3308/podsistem3?useSSL=false"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value="123"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+    </properties>
+  </persistence-unit>
+</persistence>
